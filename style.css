@@ -18,8 +18,6 @@ body {
 
 }
 
-
-
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -32,9 +30,9 @@ body {
 }
 
 .grid-item {
-    flex: 1 0 calc(100% / 16);
+    flex: 1 0 calc(960px / 16);
     /* Create 16 equal items per row */
-    height: calc(100% / 16);
+    height: calc(960px / 16);
     /* Make the height the same as the width */
     box-sizing: border-box;
     /* Ensure padding/border doesn't affect size */
