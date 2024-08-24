@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #22313f;
 }
 .userinput{
     display: flex;
@@ -9,10 +10,11 @@ body {
 }
 
 .inptbtn{
-    margin: 20px;
+    margin: 10px;
     padding: 1em;
-    background-color: bisque;
-    color: crimson;
+    font-size: 30px;
+    background-color:#34495e;
+    color: #e4f1fe;
     font-weight: bold;
     border-style: solid;
 
@@ -30,14 +32,15 @@ body {
 }
 
 .grid-item {
-    flex: 1 0 calc(960px / 16);
-    /* Create 16 equal items per row */
-    height: calc(960px / 16);
-    /* Make the height the same as the width */
+    flex: 1 0 ;
+
+    aspect-ratio: 1/1; /* Keeps squares proportional */
+    
     box-sizing: border-box;
-    /* Ensure padding/border doesn't affect size */
+    
     border: 1px solid #ddd;
-    /* Optional: Add a border to each grid item */
-    background-color: lightgray;
-    /* Make the grid items visible */
+    
+    background-color: #8dc6ff;
+   
+
 }

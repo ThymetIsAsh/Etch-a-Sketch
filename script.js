@@ -4,10 +4,12 @@ const inputBtn=document.querySelector(".inptbtn");
 function createGrid(times) {
     if (times > 100) return alert("Input Exceeds the Maximum Input");
     container.innerHTML = '';//Removes Existing Grids in container If there any
-    
+    const gridSize = `calc(100% / ${times})`;
+
     for (let i = 0; i < times * times; i++) {
         const grid = document.createElement("div");
         grid.classList.add("grid-item");
+        grid.style.flexBasis = gridSize;
 
         // Add mouseover event listener to change color on hover
         grid.addEventListener("mouseover", function() {
