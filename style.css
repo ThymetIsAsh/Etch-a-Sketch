@@ -24,7 +24,7 @@ body {
     margin: auto;
     width: 960px;
     /* Set the total width of the container */
-    height: 960px;
+    max-height: 960px;
     border: 1px solid black;
     /* Optional: Add a border to the container */
 }
