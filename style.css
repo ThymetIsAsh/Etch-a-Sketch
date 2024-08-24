@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+.userinput{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 1em;
+}
+
+.inptbtn{
+    margin: 20px;
+    padding: 1em;
+    background-color: bisque;
+    color: crimson;
+    font-weight: bold;
+    border-style: solid;
+
+}
+
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 960px;
+    /* Set the total width of the container */
+    height: 960px;
+    border: 1px solid black;
+    /* Optional: Add a border to the container */
+}
+
+.grid-item {
+    flex: 1 0 calc(100% / 16);
+    /* Create 16 equal items per row */
+    height: calc(100% / 16);
+    /* Make the height the same as the width */
+    box-sizing: border-box;
+    /* Ensure padding/border doesn't affect size */
+    border: 1px solid #ddd;
+    /* Optional: Add a border to each grid item */
+    background-color: lightgray;
+    /* Make the grid items visible */
+}
